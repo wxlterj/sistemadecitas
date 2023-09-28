@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']">
+        <ion-icon slot="start" name="caret-back" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-text color="light"><h2>Ingreses sus datos para agendar su cita</h2></ion-text>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Número de teléfono</ion-label>
+          <ion-input type="tel"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Número de identificación</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-select interface="popover" label="Tipo de documento" label-placement="floating">
+            <ion-select-option>Cédula de ciudadanía</ion-select-option>
+            <ion-select-option>Tarjeta de identidad</ion-select-option>
+            <ion-select-option>Registro cívil</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Dirección de recidencia</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-text>
+            <p id="fecha-y-hora">Elija fecha y hora</p>
+          </ion-text>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+            <ion-modal [keepContentsMounted]="true">
+              <ng-template>
+                <ion-datetime id="datetime"></ion-datetime>
+              </ng-template>
+            </ion-modal>
+        </ion-item>
+      </form>
+      <ion-button id="iniciar-sesion-boton" shape="round">
+        Agendar cita
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

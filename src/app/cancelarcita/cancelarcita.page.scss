@@ -1,0 +1,68 @@
+.card-content-cita {
+    display: flex;
+}
+
+ion-content {
+    --background: linear-gradient(180deg, rgba(52,52,232,1) 34%, rgba(0,212,255,1) 100%);
+ }
+ 
+#iniciar-sesion-boton {
+    padding-top: 2rem;
+ }
+ div {
+    background: rgb(52,52,232);
+    background: linear-gradient(180deg, rgba(52,52,232,1) 34%, rgba(0,212,255,1) 100%);
+    text-align: center;
+  }
+ 
+ ion-card {
+    margin: 50px 20px;
+    border-radius: 20px;
+ }
+ 
+ ion-card-header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+ }
+
+ ion-card-title {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ #noti {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2rem;
+    line-height: 3rem;
+ }
+
+ #info {
+    text-align: center;
+    margin: 2rem 10px;
+    font-size: 20px;
+    line-height: 2.5rem;
+ }
+ 
+ #signup-button, #login-button {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-top: 0;
+ }
+ 
+ #iniciar-sesion-boton {
+    text-align: center;
+ }
+
+ .num-cita {
+    font-size: 1.5rem;
+ }
+
+ h2 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']">
+        <ion-icon slot="start" name="caret-back" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-text color="light"><h2>Aquí puede cancelar sus citas</h2></ion-text>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-text><h3 class="num-cita">Cita 1</h3></ion-text>
+               <ion-button slot="end" size="large" color="danger">
+                <ion-icon name="trash-bin-outline"></ion-icon>
+               </ion-button>
+        </ion-item>
+        <ion-item>
+              <ion-text><h3 class="num-cita">Cita 2</h3></ion-text>
+                <ion-button slot="end" size="large" color="danger">
+                  <ion-icon name="trash-bin-outline"></ion-icon>
+               </ion-button>
+        </ion-item>
+      </ion-list>
+     </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']">
+        <ion-icon slot="start" name="caret-back" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¡Su cita ha sido agendada con éxito!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="medium">
+        <h3 id="noti">A su correo le llegará una notificación de la confirmación</h3>
+        <h3 id="info">Puede cancelar su cita con un día de antelación</h3>
+      </ion-text>
+      <ion-button id="iniciar-sesion-boton" shape="round" [routerLink]="['/home']">
+        Volver al inicio
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

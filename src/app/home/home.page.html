@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="settings-outline" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>IPS</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="person" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="medium">
+    <h1 id="usuario">¡Hola usuario!</h1>
+    <h1 id="citas">Este el sistema para agendar sus citas</h1>
+  </ion-text>
+    <ion-button class="options" expand="full" shape="round" [routerLink]="['/agendacita']">
+      Agendar cita
+    </ion-button>
+    <ion-button class="options" expand="full" shape="round" [routerLink]="['/cancelarcita']">
+      Cancelar cita
+    </ion-button>
+    <ion-button class="options" expand="full" shape="round">
+      Ver mis citas
+    </ion-button>
+    <ion-text color="medium">
+      <h1>IPS</h1>
+    </ion-text>
+</ion-content>
