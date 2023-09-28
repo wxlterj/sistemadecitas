@@ -1,13 +1,53 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">signup</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div>
+    <ion-text color="light"><h2>Bienvenido al sistema de agendar citas</h2></ion-text>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-segment color="tertiary" value="registrarse">
+        <ion-segment-button value="iniciar-sesion"  [routerLink]="['/login']">
+          <ion-label>Iniciar sesión</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="registrarse">
+          <ion-label>Registrarse</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro">
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input formControlName="apellido"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Número de identificación</ion-label>
+          <ion-input formControlName="id" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Repetir contraseña</ion-label>
+          <ion-input formControlName="repassword" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <ion-text [routerLink]="['/login']">
+        <p>Ya tengo una cuenta</p>
+      </ion-text>
+      <ion-button id="iniciar-sesion-boton" shape="round" (click)="registrar()">
+        Registrarse
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

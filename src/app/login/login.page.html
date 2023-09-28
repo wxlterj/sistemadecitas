@@ -1,12 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="success">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <form [formGroup]="formularioLogin">
-    <ion-label position="floating">Nombre</ion-label>
-    <ion-input formControlName="nombre"></ion-input>
-  </form>
+  <div>
+    <ion-text color="light"><h2>Bienvenido al sistema de agendar citas</h2></ion-text>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-segment color="tertiary" value="iniciar-sesion">
+        <ion-segment-button value="iniciar-sesion">
+          <ion-label>Iniciar sesión</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="registrarse" [routerLink]="['/signup']">
+          <ion-label>Registrarse</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input formControlName="email"></ion-input>
+        </ion-item><ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <ion-button id="iniciar-sesion-boton" shape="round" (click)="ingresar()">
+        Iniciar sesión
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
