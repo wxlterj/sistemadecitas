@@ -4,12 +4,8 @@ ion-content {
  
 #iniciar-sesion-boton {
     padding-top: 2rem;
- }
- div {
-    background: rgb(52,52,232);
-    background: linear-gradient(180deg, rgba(52,52,232,1) 34%, rgba(0,212,255,1) 100%);
     text-align: center;
-  }
+ }
  
  ion-card {
     margin: 100px 20px;
@@ -41,16 +37,6 @@ ion-content {
     margin: 2rem 10px;
     font-size: 20px;
     line-height: 2.5rem;
- }
- 
- #signup-button, #login-button {
-    max-width: 50%;
-    margin: 0 auto;
-    padding-top: 0;
- }
- 
- #iniciar-sesion-boton {
-    text-align: center;
  }
  
  

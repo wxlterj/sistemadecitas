@@ -39,6 +39,11 @@ const routes: Routes = [
     loadChildren: () => import('./cancelarcita/cancelarcita.module').then( m => m.CancelarcitaPageModule),
     canActivate: [IngresarGuard]
   },
+  {
+    path: 'configuracion',
+    loadChildren: () => import('./configuracion/configuracion.module').then( m => m.ConfiguracionPageModule),
+    canActivate: [IngresarGuard]
+  },
 ];
 
 @NgModule({

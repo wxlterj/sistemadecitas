@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/home']">
+        <ion-icon slot="start" name="caret-back" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="medium">
+    <h1 id="usuario">Configuración</h1>
+  </ion-text>
+    <ion-button class="options" expand="full" shape="round" color="danger" (click)="salir()">
+      Cerrar sesión
+    </ion-button>
+    <ion-text color="medium">
+      <h1>IPS</h1>
+    </ion-text>
+</ion-content>
